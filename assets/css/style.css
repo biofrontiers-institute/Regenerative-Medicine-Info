@@ -250,7 +250,7 @@ img#down-arrow {
 .lab-title {
   position: absolute;
   bottom: 0px;
-  left:0px;
+  left: 0px;
   width: 100%;
   font-size: 10em;
   font-weight: 700;
@@ -323,6 +323,12 @@ img#down-arrow {
 }
 
 /* Boulder Section */
+
+.boulder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px;
+}
 
 .boulder-aerial {
   max-width: 100%;
@@ -429,8 +435,8 @@ img#down-arrow {
 
   .lab-title {
     position: absolute;
-    left:0px;
-    top:0px;
+    left: 0px;
+    top: 0px;
     writing-mode: vertical-rl !important;
     text-orientation: sideways-right !important;
     overflow: hidden;
@@ -438,14 +444,14 @@ img#down-arrow {
   .lab-box {
     position: absolute;
     bottom: 0px;
-    right:0;
-    left:0;
-    display:inline-block;
+    right: 0;
+    left: 0;
+    display: inline-block;
     padding: 10px 30px 50px;
     max-width: 400px;
-    margin-bottom:30px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     /* height: 330px; */
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
@@ -495,7 +501,7 @@ img#down-arrow {
     max-width: 70%;
   }
   .lab-desc {
-    font-size:.8em;
+    font-size: 0.8em;
     line-height: 1.5em;
   }
 }
