@@ -191,11 +191,24 @@ h1.nav-section-num {
 
 .two-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-gap: 100px;
 }
 
 /* Who We Are */
+
+#gettoknow {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 50px;
+  margin-top: 200px;
+  line-height: 2.3em;
+}
+.gettoknow-text {
+  text-align: center;
+  font-size: 1.5em;
+}
 
 img#down-arrow {
   animation-duration: 1s;
@@ -309,12 +322,22 @@ img#down-arrow {
 
 /* Boulder Section */
 
+.boulder-aerial {
+  max-width: 100%;
+}
 .stat-box {
   display: grid;
+  grid-template-columns: 1fr;
   justify-items: center;
   padding: 30px;
   background-color: #cfb87c;
   border-radius: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 .stat-num {
@@ -334,6 +357,9 @@ img#down-arrow {
 @media screen and (max-width: 1200px) {
   .nav-desc {
     font-size: 1.2em;
+  }
+  #gettoknow {
+    margin-top: 100px;
   }
 }
 
@@ -396,6 +422,20 @@ img#down-arrow {
     letter-spacing: 0.01em;
     margin: 10px 0;
   }
+
+  .two-blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  #regen-image {
+    order: 0 !important;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -416,6 +456,10 @@ img#down-arrow {
   }
   .timeline-box {
     margin-left: 30px;
+  }
+  div.gettoknow-text {
+    font-size: 1.2em;
+    line-height: 1.5em;
   }
 }
 
@@ -443,6 +487,6 @@ img#down-arrow {
     font-size: 0.8em;
   }
   .timeline-box h4 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
