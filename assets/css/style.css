@@ -1,7 +1,7 @@
 /* Style for the BioFrontiers Regenerative Biology single page site */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");
 
 html,
 body {
@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: roboto;
+  color: #222222;
+  scroll-behavior: smooth;
 }
 
 div#biof-logo {
@@ -16,8 +18,9 @@ div#biof-logo {
   color: #ffffff;
 }
 div#biof-logo h1 {
-  font-size: 2em;
-  letter-spacing: 0.02em;
+  font-size: 4em;
+  letter-spacing: 0.01em;
+  margin: 20px 0;
 }
 
 .gold-letters {
@@ -32,6 +35,17 @@ div#biof-logo h1 {
 
 p {
   line-height: 1.5em;
+}
+
+a {
+  color: #cfb87c;
+}
+a:hover {
+  color: #ada76b;
+}
+
+.fade-date {
+  opacity: 0.8;
 }
 
 /* ––––––––––––––––––––––––––––– */
@@ -115,9 +129,10 @@ section#biof-5-moreresources {
   margin-bottom: 50px;
 }
 
-.timeline-box-title {
+.timeline-box-date {
   font-size: 1.5em;
   font-weight: 900;
+  color: #a19472;
 }
 
 .nav-block > a {
@@ -166,6 +181,32 @@ section#biof-5-moreresources {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
+}
+
+/* Who We Are */
+
+img#down-arrow {
+  animation-duration: 1s;
+  animation-name: oscillate;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: oscillate;
+  -webkit-animation-iteration-count: infinite;
+  width:70px;
+}
+  
+@keyframes oscillate {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .lab {
@@ -235,17 +276,39 @@ section#biof-5-moreresources {
 }
 
 .lab-calve .lab-sticky {
-    background-image: url("../images/sarah-calve.jpg");
+  background-image: url("../images/sarah-calve.jpg");
 }
 
 .lab-olwin .lab-sticky {
-    background-image: url("../images/olwin-lab.jpg")
+  background-image: url("../images/olwin-lab.jpg");
 }
 
 .lab-ferguson .lab-sticky {
-    background-image: url("../images/ferguson-lab.jpg")
+  background-image: url("../images/ferguson-lab.jpg");
 }
 
 .lab-neu .lab-sticky {
-    background-image: url("../images/neu-lab.jpg")
+  background-image: url("../images/neu-lab.jpg");
+}
+
+/* Boulder Section */
+
+.stat-box {
+  display: grid;
+  justify-items: center;
+  padding: 30px;
+  background-color: #cfb87c;
+  border-radius: 10px;
+}
+
+.stat-num {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.stat-text {
+  text-align: center;
+  max-width:350px;
+  line-height: 1.7em;
 }
