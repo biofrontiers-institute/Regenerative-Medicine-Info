@@ -17,6 +17,9 @@ div#biof-logo {
   padding: 100px;
   color: #ffffff;
 }
+div#biof-logo img {
+  max-width: 400px;
+}
 div#biof-logo h1 {
   font-size: 4em;
   letter-spacing: 0.01em;
@@ -81,6 +84,8 @@ section#biof-nav {
   border-top: 30px solid #ffffff;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  background-color: #ffffff;
+  padding: 0 10px 20px;
 }
 
 section#biof-1-timeline {
@@ -142,9 +147,11 @@ section#biof-5-moreresources {
 
 .nav-block {
   text-align: center;
-  padding-bottom: 50px;
+  padding: 0 10px 50px;
   color: #ffffff;
   font-weight: 700;
+  margin: 0 10px;
+  border-radius: 30px;
 }
 
 .nav-block-1 {
@@ -177,6 +184,11 @@ section#biof-5-moreresources {
   background-color: #ffffff;
   padding: 100px;
 }
+
+h1.nav-section-num {
+  font-size: 2em;
+}
+
 .two-blocks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -192,9 +204,9 @@ img#down-arrow {
   -webkit-animation-duration: 3s;
   -webkit-animation-name: oscillate;
   -webkit-animation-iteration-count: infinite;
-  width:70px;
+  width: 70px;
 }
-  
+
 @keyframes oscillate {
   from {
     transform: translateY(0);
@@ -271,6 +283,10 @@ img#down-arrow {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.lab-burdick .lab-sticky {
+  background-image: url("../images/burdick_lab.jpg");
+}
+
 .lab-bryant .lab-sticky {
   background-image: url("../images/bryant-lab.jpg");
 }
@@ -309,6 +325,124 @@ img#down-arrow {
 
 .stat-text {
   text-align: center;
-  max-width:350px;
+  max-width: 350px;
   line-height: 1.7em;
+}
+
+/* Smaller screen sizes */
+
+@media screen and (max-width: 1200px) {
+  .nav-desc {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  section#biof-building {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#biof-building {
+    font-size: 3em;
+  }
+  section#biof-building .fixed-part {
+    padding: 50px !important;
+  }
+
+  section#biof-nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 0 0 20px;
+  }
+  section.nav-section {
+    padding: 50px;
+  }
+
+  .nav-block {
+    text-align: center;
+    padding-bottom: 80px;
+    color: #ffffff;
+    max-height: 250px;
+    font-weight: 700;
+    margin: 20px 50px;
+    border-radius: 30px;
+  }
+  .nav-block h1 {
+    margin: 30px 0;
+  }
+  .nav-desc {
+    font-size: 1.5em;
+  }
+
+  section#biof-top {
+    background-position-x: 15%;
+  }
+
+  div#biof-logo {
+    padding: 30px;
+  }
+
+  div#biof-logo img {
+    max-width: 250px !important;
+  }
+
+  div#biof-logo h1 {
+    font-size: 2em;
+    letter-spacing: 0.01em;
+    margin: 10px 0;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .timeline-box p {
+    font-size: 0.9em;
+  }
+
+  section#biof-building {
+    font-size: 2em;
+  }
+
+  section#biof-building .fixed-part {
+    padding: 30px !important;
+  }
+  section.nav-section {
+    padding: 30px;
+  }
+  .timeline-box {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section#biof-building {
+    font-size: 1.7em;
+  }
+  .nav-block {
+    padding-bottom: 20px;
+    max-height: 250px;
+    margin: 10px 30px;
+    border-radius: 30px;
+  }
+  .nav-block h1 {
+    font-size: 3em;
+    margin: 30px 0;
+  }
+  .nav-desc {
+    font-size: 1.2em;
+  }
+  section.nav-section {
+    padding: 20px;
+  }
+  .timeline-box p {
+    font-size: 0.8em;
+  }
+  .timeline-box h4 {
+    font-size: .9em;
+  }
 }
