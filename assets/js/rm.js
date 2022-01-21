@@ -5,10 +5,6 @@ let focus_areas = document.querySelector('section#focus-areas').getBoundingClien
 let biof_focus = document.querySelectorAll('.biof-focus');
 
 document.addEventListener('scroll', function() {
-    // map_container = document.querySelector('.map-container').getBoundingClientRect();
-    // let titlePos = top_title.getBoundingClientRect();
-    // let firstPos = first_slide.getBoundingClientRect();
-
     focus_areas = document.querySelector('section#focus-areas').getBoundingClientRect();
 
     let focus_whole = Math.abs(focus_areas.bottom-focus_areas.top);
@@ -19,8 +15,4 @@ document.addEventListener('scroll', function() {
             focus.style.setProperty('opacity', focus_p);
         }
     });
-
-
 });
-
-console.log("Loaded the rm.js file");
