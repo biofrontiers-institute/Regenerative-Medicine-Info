@@ -208,10 +208,8 @@ section#focus-areas {
   grid-template-rows: 1fr 5fr;
 }
 .focus-areas-title {
-  font-size: 1.5em;
   font-weight: 700;
-  text-align: center;
-  padding-top:4em;
+  padding:4em 0 2em;
 }
 .focus-areas {
   display: grid;
