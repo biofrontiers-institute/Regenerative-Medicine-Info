@@ -195,6 +195,51 @@ h1.nav-section-num {
   grid-gap: 100px;
 }
 
+section#focus-areas {
+  position: relative;
+  height: 200vh;
+}
+.focus-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  display:grid;
+  grid-template-rows: 1fr 5fr;
+}
+.focus-areas-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  padding-top:4em;
+}
+.focus-areas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap:10px; */
+  grid-gap:50px;
+  padding:0 50px 100px;
+}
+.biof-focus {
+  background-color:#cfb87c;
+  opacity:0.8;
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items:center;
+  align-items: center;
+  border-radius: 40px;
+}
+.main-focus {
+  background-color:#cfb87c;
+  opacity:1;
+}
+.focus-area-text {
+  font-size:1.7em;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color:#ffffff;
+}
+
 /* Who We Are */
 
 #gettoknow {
