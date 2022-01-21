@@ -236,6 +236,7 @@ section#focus-areas {
   font-weight: 700;
   letter-spacing: .02em;
   color:#ffffff;
+  text-align:center;
 }
 
 /* Who We Are */
@@ -412,6 +413,32 @@ img#down-arrow {
   #gettoknow {
     margin-top: 100px;
   }
+  .focus-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap:10px; */
+    grid-gap:30px;
+    padding:0 30px 100px;
+  }
+  .biof-focus {
+    background-color:#cfb87c;
+    opacity:0.8;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  .main-focus {
+    background-color:#cfb87c;
+    opacity:1;
+  }
+  .focus-area-text {
+    font-size:1.3em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color:#ffffff;
+  }
 }
 
 /* Special height rule for the biof statement */
@@ -474,6 +501,34 @@ img#down-arrow {
     font-size: 2em;
     letter-spacing: 0.01em;
     margin: 10px 0;
+  }
+
+  .focus-areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap:10px; */
+    grid-gap:20px;
+    padding:0 0 50px;
+    width:100%;
+  }
+  .biof-focus {
+    background-color:#cfb87c;
+    opacity:0.8;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .main-focus {
+    background-color:#cfb87c;
+    opacity:1;
+  }
+  .focus-area-text {
+    font-size:1em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color:#ffffff;
   }
 
   .lab-title {
